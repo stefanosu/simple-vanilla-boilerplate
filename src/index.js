@@ -14,12 +14,12 @@ const main = async () => {
 ///button here on click pops open modal getting button from index.html
 ///add event listener here 
 
-let button = document.getElementById('modal-btn')
-// console.log(button) 
-button.addEventListener('click', function(e){
-  popUpModal
-  console.log(e.target)
-})
+// let button = document.getElementById('modal-btn')
+// // console.log(button) 
+// button.addEventListener('click', function(e){
+//   popUpModal
+//   console.log(e.target)
+// })
 
 
 const popUpModal = () => {
@@ -40,7 +40,7 @@ var carousel = new Carousel({
   btnStopText: 'Pause' // <stop> button text
 });
 
-carousel.show(2);
+carousel.show(1);
 
 // Move to the next slide
 carousel.next();
