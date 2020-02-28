@@ -5,27 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="vanilla-js-carousel/vanilla-js-carousel.css"> 
-  
+  <link rel="stylesheet" href="vanilla-js-carousel/vanilla-js-carousel.css">   
 </head>
 
 <body>
   <h2 id="header">Ice cream shop</h2> 
-  
   <div class="js-Carousel" id="carousel">
     <ul>
         <li><img src="./images/chipsAhoy.jpeg" alt="ice cream shop"></li>
         <li><img src="./images/scoopsAhoy.jpeg" alt="ice cream "></li>
         <li><img src="./images/theTeam.jpeg" alt="stranger things people"></li>
     </ul>
+  </div>
+
+  <div> 
+    <button
+    type="button"
+    class="modal-btn"
+    data-popup-trigger="one">
+  </button>
 </div>
 
+  <div 
+    class="popup-modal shadow" 
+    data-popup-modal="one">
+    <i class="f popup-modal__close"></i>
+    <h1 class="font-weight-bold">
+      Modal One 
+    </h1>
+  </div>
 
-<div id="modal" class="chat-bot">
-  <button onClick() id="modal-btn">Open Chat</button>
+<!-- <div id="modal" class="chat-bot">
+  <button onClick() id="modal-btn">Open Chat</button> -->
 
-</div>
-  
+
+
   <script src="dist/main.js"></script> 
   <script src="src/index.js"></script>
   <script src="src/vanilla-js-carousel"></script> 
