@@ -1,0 +1,27 @@
+
+#header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  font-variant: normal;
+}
+
+
+#carousel {
+  border-radius: 1.5em; 
+  padding-top: 0.5em;
+}
+
+img {
+  width: 30em;
+}
+
+html{
+  background-image: url("images/iceCream.jpeg");
+}  
+
+
+
+#modal {
+  box-shadow: bisque; 
+  color: aliceblue;
+}
