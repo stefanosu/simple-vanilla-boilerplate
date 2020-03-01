@@ -3,7 +3,6 @@ import axios from 'axios';
 const Carousel = require("vanilla-js-carousel");
 // const cors = require(cors)
 
-console.log(sum(1,2));
 
 const main = async () => {
   const response = await axios.get("https://project.wnyc.org/ice-cream/data/places.json")
@@ -11,21 +10,6 @@ const main = async () => {
   console.log(response.data)
 }
 
-///button here on click pops open modal getting button from index.html
-///add event listener here 
-
-// let button = document.getElementById('modal-btn')
-// // console.log(button) 
-// button.addEventListener('click', function(e){
-//   popUpModal
-//   console.log(e.target)
-// })
-
-
-const popUpModal = () => {
-  ///in here goes the form and box for chat 
-  console.log('workss?')
-}
 
 
 var carousel = new Carousel({
@@ -44,6 +28,14 @@ carousel.show(1);
 
 // Move to the next slide
 carousel.next();
+
+
+let button = document.querySelector('openBtn')
+
+let toggle = function () {
+  document.querySelector('.modal').classList.toggle('active') // toggle class for animation
+}
+button.addEventListener('click', toggle, false);
 
 
 main();

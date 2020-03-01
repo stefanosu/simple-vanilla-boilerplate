@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="node_modules/vanilla-js-carousel/vanilla-js-carousel.css">   
 </head>
+<body>
 
 <h2 id="header">Scoops Ahoy Ice cream</h2> 
 <div class="js-Carousel" id="carousel">
@@ -15,25 +16,44 @@
       <li><img src="./images/scoopsAhoy.jpeg" alt="ice cream "></li>
       <li><img src="./images/theTeam.jpeg" alt="stranger things people"></li>
   </ul>
-</div> 
-<body>
-  
-  <div> 
-    <button
-    type="button"
-    class="modal-btn"
-    data-popup-trigger="one">
-  </button>
 </div>
 
 
-<!-- <div id="modal" class="chat-bot">
-  <button onClick() id="modal-btn">Open Chat</button> -->
+<audio id="myAudio">
+  <source src="audio/strangerThings.ogg" type="audio/ogg">
+  <source src="audio/strangerThings.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+
+<script>
+  var x = document.getElementById("myAudio"); 
+
+  function playAudio() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
+  
 
 
+<button class="openBtn" id="openBtn">Chat</button>
+<div class="chat" id="form">
+  <form class="form-container">
+    <label for="message"><b>Chat with Captain Steve</b></label>
+    <textarea id="userResponse"></textarea>
+    <button class="submitRespBtn" type="submit" id="submitRespBtn">
+      Send
+    </button>
+  </form>
+</div>
+</div>
 
-  <script src="dist/main.js"></script> 
-  <script src="src/index.js"></script>
-  <!-- <script src="src/vanilla-js-carousel"></script>  -->
+
+<script src="dist/main.js"></script> 
+<!-- <script src="src/index.js"></script> -->
 </body>
 </html>
